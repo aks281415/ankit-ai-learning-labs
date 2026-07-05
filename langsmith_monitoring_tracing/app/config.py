@@ -1,10 +1,3 @@
-"""
-Application configuration loaded from environment variables.
-
-DeepSeek uses an OpenAI-compatible API, so we use ChatOpenAI
-with a custom base_url pointing to https://api.deepseek.com
-"""
-
 import os
 from pydantic_settings import BaseSettings
 from dotenv import load_dotenv
@@ -17,19 +10,19 @@ class Settings(BaseSettings):
 
     # ── LLM Configuration ──────────────────────────────────────────
     DEEPSEEK_API_KEY: str = ""
-    DEEPSEEK_BASE_URL: str = "https://api.deepseek.com"
+    DEEPSEEK_BASE_URL: str = ""
     MODEL_NAME: str = "deepseek-chat"  # deepseek-chat (V3) or deepseek-reasoner (R1)
 
     # ── LangSmith Tracing ──────────────────────────────────────────
     LANGCHAIN_TRACING_V2: bool = True
     LANGCHAIN_API_KEY: str = ""
-    LANGCHAIN_PROJECT: str = "chatbot-observability"
-    LANGCHAIN_ENDPOINT: str = "https://api.smith.langchain.com"
+    LANGCHAIN_PROJECT: str = ""
+    LANGCHAIN_ENDPOINT: str = "
 
     # ── Application ────────────────────────────────────────────────
     APP_NAME: str = "AI Career Mentor"
-    APP_HOST: str = "0.0.0.0"
-    APP_PORT: int = 8000
+    APP_HOST: str = ""
+    APP_PORT: int = 
     MAX_CONVERSATION_HISTORY: int = 20  # Max messages to keep per session
     SESSION_TIMEOUT_MINUTES: int = 60   # Auto-expire inactive sessions
 
