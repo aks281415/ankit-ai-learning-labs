@@ -144,7 +144,7 @@ Assign policy once → all children inherit it automatically.
 
 ---
 
-## Layer 5 — Tenant (Most Misunderstood)
+## Layer 5 — Tenant
 
 > **Tenant is NOT for organising resources. It's an identity directory.**
 

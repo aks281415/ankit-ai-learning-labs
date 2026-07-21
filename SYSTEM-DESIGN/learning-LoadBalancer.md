@@ -53,7 +53,7 @@ flowchart TB
 
 ## Component Breakdown
 
-### 1. How the Public IP & DNS Setup Works (Important — Students Often Miss This)
+### 1. How the Public IP & DNS Setup Works
 
 Before any user can visit `shop.shopverse.com`, two things must happen **in this order**:
 
