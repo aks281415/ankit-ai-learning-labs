@@ -98,7 +98,3 @@ Indexing is not free; it involves trade-offs:
 * Columns that are frequently modified.
 
 
-
------------------------------------DATABASE PARTITIONING--------------------------------------------
-
-
