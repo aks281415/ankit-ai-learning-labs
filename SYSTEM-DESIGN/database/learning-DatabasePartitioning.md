@@ -59,14 +59,15 @@ Splits data based on discrete lists of values (e.g., regions or customer types).
 * **Real-World Use (Multi-Tenant Isolation)**: In SaaS apps (like Shopify), isolating large clients (e.g. Nike) in their own partition ensures their heavy traffic doesn't slow down small bakery clients.
 
 ### 3. Hash Partitioning
+
 Applies a mathematical hash function to a column and routes rows using modulo arithmetic:
 
-$$\text{Partition Number} = \text{hash}(\text{user\_id}) \pmod{N}$$
+$$
+\text{Partition Number} = \operatorname{hash}(userId) \bmod N
+$$
 
-* **How Routing Works**: Querying `WHERE user_id = 42` calculates `hash(42) % 4 = 2`. The database routes instantly ($O(1)$) to Partition #2.
-* **Best for**: Evenly scattering rows across buckets to prevent "hotspots" when there is no natural date or region key.
-
----
+* **How Routing Works**: Querying `WHERE user_id = 42` computes `hash(42) % 4 = 2`. The database immediately routes the request to **Partition #2**, resulting in **O(1)** partition lookup.
+* **Best for**: Evenly distributing rows across partitions to prevent hotspots when there is no natural partitioning key such as a date or geographic region.
 
 ## 4. Key Gotchas & Best Practices
 
