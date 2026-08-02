@@ -1,5 +1,5 @@
-# Azure Hierarchy: Tenant → Management Group → Subscription → Resource Group → Resource
-
+# Cloud Infrastructure Hierarchy & Resource Isolation
+*(Reference Model: Azure Tenant $\rightarrow$ Management Group $\rightarrow$ Subscription $\rightarrow$ Resource Group $\rightarrow$ Resource)*
 ---
 
 ## The Full Picture
