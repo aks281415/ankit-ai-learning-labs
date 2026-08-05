@@ -2,6 +2,8 @@
 
 A step-by-step overview of how machine learning systems are built, from idea to production.
 
+![ML Development Lifecycle](../assets/ml_lifecycle_excalidraw.png)
+
 ---
 
 ## Step 1: Problem Definition & Framing
