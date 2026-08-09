@@ -85,14 +85,3 @@ A comprehensive guide covering Instance vs Model-Based Learning, Data Preprocess
 - **Golden Rule**: **Correlation $\neq$ Causation** (Statistical association between 2 variables does NOT mean one directly causes the other).
 
 ---
-
-## Summary Cheat Sheet for Interviews
-
-1. **Both** instance-based and model-based learning require proper **Data Preparation & Feature Scaling**.
-2. **Model-Based**: Trains learned parameters $\rightarrow$ Stores model structure $\rightarrow$ Original dataset can often be discarded.
-3. **Instance-Based**: No parameter training $\rightarrow$ Must keep training dataset stored in memory to search during prediction.
-4. **EDA Selection Rule**:
-   - `Num vs Num` $\rightarrow$ Scatter Plot
-   - `Cat vs Num` $\rightarrow$ Box Plot / Bar Plot
-   - `Cat vs Cat` $\rightarrow$ Stacked Bar / Crosstab
-   - `3+ Vars` $\rightarrow$ Scatter with Hue / Heatmap
