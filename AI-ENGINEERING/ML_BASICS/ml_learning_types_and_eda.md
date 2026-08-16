@@ -83,5 +83,3 @@ A comprehensive guide covering Instance vs Model-Based Learning, Data Preprocess
 - **Negative ($-1.0$)**: As $X$ increases, $Y$ decreases (e.g. Car Age vs Car Price).
 - **Zero ($0.0$)**: No linear relationship (e.g. Shoe Size vs IQ Score).
 - **Golden Rule**: **Correlation $\neq$ Causation** (Statistical association between 2 variables does NOT mean one directly causes the other).
-
----
